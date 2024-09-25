@@ -1,0 +1,22 @@
+.stage {
+    background: url('~/assets/images/Standup/stage.jpg');
+    height: 250px;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.standup {
+    position: absolute;
+    height: 200px;
+    left: 120px;
+    top: 20px;
+}
+
+.microphone {
+    position: absolute;
+    height: 200px;
+    left: 100px;
+    top: 165px;
+}
