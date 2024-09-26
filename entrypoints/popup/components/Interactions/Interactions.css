@@ -1,0 +1,17 @@
+.interactions {
+    width: 100%;
+    height: 200px;
+}
+
+.heckle-input {
+    width: 70% !important;
+    resize: none;
+}
+
+.buttons {
+    
+}
+
+.interaction-button {
+    height: 64px;
+}

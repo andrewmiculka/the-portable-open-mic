@@ -1,5 +1,6 @@
-import Standup from './components/Standup/Standup';
-import Audience from './components/Audience/Audience';
+import Standup from './components/Standup';
+import Audience from './components/Audience';
+import Interactions from './components/Interactions';
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Standup />
       <Audience />
+      <Interactions />
     </>
   );
 }
