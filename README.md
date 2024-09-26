@@ -1,3 +1,3 @@
-# WXT + React
+# The Portable Open Mic
 
-This template should help get you started developing with React in WXT.
+Getting bored of work? Enjoy a night at an open-mic right in your browser!
