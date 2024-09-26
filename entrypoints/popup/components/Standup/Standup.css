@@ -20,3 +20,10 @@
     left: 100px;
     top: 165px;
 }
+
+.volume-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: #1a1a1a50;
+}
