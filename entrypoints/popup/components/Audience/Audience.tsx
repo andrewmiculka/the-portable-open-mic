@@ -19,7 +19,7 @@ const Audience = () => {
 
     const person = (src: string, id: number) => {
         const pctOffset = id * 25;
-        return <img src={src} className={audienceMemberClassNames} style={{ left: `calc(${pctOffset}% - 10px)` }} />
+        return <img src={src} className={audienceMemberClassNames} style={{ left: `calc(${pctOffset}% - 10px)` }} key={`person_${id}`} />
     }
 
     return (
