@@ -1,28 +1,24 @@
 import { useState } from "react";
-import './Interactions.css';
+import './Interactions.scss';
 
-const THUMB_UP = 'thumb_up';
-const THUMB_DOWN = 'thumb_down';
+const INTERACTIONS_CLASS = 'interactions';
+const INTERACTIONS_BUTTON_SECTION_CLASS = `${INTERACTIONS_CLASS}__button-section`;
+const INTERACTION_BUTTON_CLASS = `${INTERACTIONS_BUTTON_SECTION_CLASS}__button`;
 
 const Interactions = () => {
     return (
-        <section className="interactions">
-            <div className="buttons">
-                <button className='interaction-button'>
-                    <span className="material-symbols-outlined">
-                        { THUMB_DOWN }
-                    </span>
+        <section className={INTERACTIONS_CLASS}>
+            <div className={INTERACTIONS_BUTTON_SECTION_CLASS}>
+                <button className={`${INTERACTION_BUTTON_CLASS} ${INTERACTION_BUTTON_CLASS}--boo`}>
+                    <i className="fa-solid fa-hand-middle-finger"></i>
                 </button>
-                <button className='interaction-button'>
+                <button className={`${INTERACTION_BUTTON_CLASS} ${INTERACTION_BUTTON_CLASS}--cough`}>
                     DRY COUGH
                 </button>
-                <button className='interaction-button'>
-                    <span className="material-symbols-outlined">
-                        { THUMB_UP }
-                    </span>
+                <button className={`${INTERACTION_BUTTON_CLASS} ${INTERACTION_BUTTON_CLASS}--yay`}>
+                    <i className="fa-solid fa-hands-clapping"></i>
                 </button>
             </div>
-            <textarea rows={5} className="heckle-input"></textarea>
         </section>
     )
 }

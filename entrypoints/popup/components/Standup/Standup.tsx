@@ -3,12 +3,11 @@ import talkingStandupSrc from '~/assets/images/Standup/animated.gif';
 import staticStandupSrc from '~/assets/images/Standup/static.png';
 import microphoneSrc from '~/assets/images/Standup/mic.png';
 import Animalese from '@/entrypoints/popup/utils/animalese/animalese.js';
-import './Standup.css';
+import './Standup.scss';
 
 const PITCH_MIN = 0.2;
 const PITCH_MAX = 2;
-const VOLUME_ON = 'volume_up';
-const VOLUME_OFF = 'volume_off';
+const STANDUP_CLASSNAME = 'stage';
 
 const Standup = () => {
     const audioRef = useRef<HTMLAudioElement>();
@@ -42,14 +41,14 @@ const Standup = () => {
     }, [joke]);
 
     return (
-        <section className="stage">
-            <button className='volume-button' onClick={() => setIsMuted(!isMuted)}>
+        <section className={STANDUP_CLASSNAME}>
+            <button className={`${STANDUP_CLASSNAME}__volume-button`} onClick={() => setIsMuted(!isMuted)}>
                 <span className="material-symbols-outlined">
-                    { isMuted ? VOLUME_OFF : VOLUME_ON }
+                    { isMuted ? 'VOLUME_OFF' : 'VOLUME_ON' }
                 </span>
             </button>
-            <img className='standup' src={isTalking ? talkingStandupSrc : staticStandupSrc } />
-            <img className='microphone' src={microphoneSrc} />
+            <img className={`${STANDUP_CLASSNAME}__standup`} src={isTalking ? talkingStandupSrc : staticStandupSrc } />
+            <img className={`${STANDUP_CLASSNAME}__microphone`} src={microphoneSrc} />
         </section>
     )
 };

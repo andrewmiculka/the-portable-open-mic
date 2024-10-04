@@ -1,0 +1,41 @@
+.interactions {
+    width: 100%;
+
+    &__button-section {
+        display: flex;
+
+
+        &__button {
+            height: 64px;
+
+            &--boo {
+                color: #cbf078;
+            }
+
+            &--cough {
+                font-family: "Nabla", system-ui;
+                font-size: 1.5rem;
+                background-color: transparent;
+                border: none;
+
+                &:hover {
+                    text-shadow: 0 0 6px #F96262;
+                }
+
+                &:focus, &:focus-visible {
+                    outline: none;
+                }
+
+                &:active {
+                    padding-bottom: 1px;
+                    text-shadow: 0 0 6px #D90808;
+
+                }
+            }
+
+            &--yay {
+                color: #e46161;
+            }
+        }
+    }
+}
