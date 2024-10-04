@@ -1,4 +1,4 @@
-import Standup from './components/Standup';
+import Stage from './components/Stage';
 import Audience from './components/Audience';
 import Interactions from './components/Interactions';
 import './App.css';
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Standup />
+      <Stage />
       <Audience />
       <Interactions />
     </>
