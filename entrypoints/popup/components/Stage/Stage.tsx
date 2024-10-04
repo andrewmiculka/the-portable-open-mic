@@ -9,7 +9,7 @@ const PITCH_MIN = 0.2;
 const PITCH_MAX = 2;
 const STAGE_CLASSNAME = 'stage';
 
-const Standup = () => {
+const Stage = () => {
     const audioRef = useRef<HTMLAudioElement>();
     const [isTalking, setIsTalking] = useState(false);
     const [isMuted, setIsMuted] = useState(false);
@@ -53,4 +53,4 @@ const Standup = () => {
     )
 };
 
-export default Standup;
+export default Stage;
